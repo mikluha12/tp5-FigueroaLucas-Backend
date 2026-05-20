@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Destinos</h1>
+</header>
+
+<main>
+
+    <!-- FILTROS CSS -->
+    <section class="filtros">
+        <h2>Filtrar por categoría</h2>
+
+        <input type="radio" name="filtro" id="todos" checked>
+        <label for="todos">Todos</label>
+
+        <input type="radio" name="filtro" id="cultural">
+        <label for="cultural">Cultural</label>
+
+        <input type="radio" name="filtro" id="naturaleza">
+        <label for="naturaleza">Naturaleza</label>
+
+        <input type="radio" name="filtro" id="playa">
+        <label for="playa">Sol y Playa</label>
+
+        <input type="radio" name="filtro" id="gastronomico">
+        <label for="gastronomico">Gastronómico</label>
+
+        <input type="radio" name="filtro" id="religioso">
+        <label for="religioso">Religioso</label>
+    </section>
+
+    <!-- GALERÍA MASONRY -->
+    <section class="galeria">
+
+        <article class="item cultural">
+            <img src="img/destino1.jpg" alt="">
+            <div class="overlay">
+                <h3>Destino Cultural</h3>
+            </div>
+        </article>
+
+        <article class="item naturaleza">
+            <img src="img/destino2.jpg" alt="">
+        </article>
+
+        <article class="item playa">
+            <img src="img/destino3.jpg" alt="">
+        </article>
+
+        <article class="item gastronomico">
+            <img src="img/destino4.jpg" alt="">
+        </article>
+
+    </section>
+
+    <!-- TARJETAS -->
+    <section class="cards-destinos">
+
+        <article class="card">
+            <img src="img/playa.jpg" alt="">
+            <div class="info">
+                <h3>Playa Caribe</h3>
+                <p>Destino paradisíaco</p>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- TABLA -->
+    <section class="tabla-precios">
+        <h2>Precios</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>Precio</th>
+                    <th>Días</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Caribe</td>
+                    <td>$1200</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td>Europa</td>
+                    <td>$2000</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+</body>
+</html>

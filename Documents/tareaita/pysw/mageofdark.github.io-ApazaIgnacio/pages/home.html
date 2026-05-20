@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo - Explora el Mundo</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER + NAV -->
+    <header>
+        <div class="logo">
+            <h1>Turismo</h1>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Destinos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Playa</a></li>
+                        <li><a href="#">Montaña</a></li>
+                        <li><a href="#">Ciudad</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Agencias</a>
+                    <ul class="submenu">
+                        <li><a href="#">Top agencias</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="precios.html">Precios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO CON VIDEO -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="video/destino.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+
+        <div class="hero-overlay">
+            <h2>Descubre el Mundo</h2>
+            <p>Viaja, explora y vive nuevas experiencias</p>
+        </div>
+    </section>
+
+    <!-- DESTINOS DESTACADOS -->
+    <section class="destinos">
+        <h2>Destinos Destacados</h2>
+
+        <div class="cards">
+
+            <article class="card">
+                <img src="img/playa.jpg" alt="Playa">
+                <h3>Playa</h3>
+                <p>Relájate en las mejores playas del mundo.</p>
+            </article>
+
+            <article class="card">
+                <img src="img/montana.jpg" alt="Montaña">
+                <h3>Montaña</h3>
+                <p>Aventura en paisajes increíbles.</p>
+            </article>
+
+            <article class="card">
+                <img src="img/ciudad.jpg" alt="Ciudad">
+                <h3>Ciudad</h3>
+                <p>Descubre las ciudades más famosas.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="contador">
+        <div class="contador-item">
+            <h3>500+</h3>
+            <p>Visitantes</p>
+        </div>
+
+        <div class="contador-item">
+            <h3>120+</h3>
+            <p>Destinos</p>
+        </div>
+
+        <div class="contador-item">
+            <h3>80+</h3>
+            <p>Agencias</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS (CARRUSEL CSS) -->
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+
+        <div class="carrusel">
+
+            <article class="testimonio">
+                <p>"Una experiencia increíble, lo recomiendo!"</p>
+                <h4>- Juan Pérez</h4>
+            </article>
+
+            <article class="testimonio">
+                <p>"Los mejores destinos y atención."</p>
+                <h4>- María López</h4>
+            </article>
+
+            <article class="testimonio">
+                <p>"Viajar nunca fue tan fácil."</p>
+                <h4>- Carlos Gómez</h4>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <h3>Suscríbete</h3>
+            <form>
+                <input type="email" placeholder="Tu correo" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Redes -->
+        <section class="redes">
+            <h3>Síguenos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </section>
+
+        <!-- Mapa -->
+        <section class="mapa">
+            <h3>Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!..." 
+                width="100%" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+
+    </footer>
+
+</body>
+</html>

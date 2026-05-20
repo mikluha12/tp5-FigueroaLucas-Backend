@@ -1,0 +1,192 @@
+/* ====================== VARIABLES ====================== */
+:root {
+    --color-primary: #005f8f;
+    --color-accent: #00b4d8;
+    --color-dark: #1a1a2e;
+    --color-light: #f8f9fa;
+    --color-gray: #e9ecef;
+    --text-dark: #222;
+    --text-light: #fff;
+
+    --transition: all 0.4s ease;
+    --shadow-sm: 0 4px 15px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* ====================== BASE ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--color-light);
+    color: var(--text-dark);
+}
+
+/* ====================== HEADER ====================== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 95, 143, 0.95);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+}
+/* ====================== HERO ====================== */
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-overlay h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+}
+
+/* ====================== SECCION PRECIOS ====================== */
+.precios {
+    padding: 100px 5%;
+    background: white;
+}
+
+.precios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* GRID 2 COLUMNAS */
+.precios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* ====================== TARJETAS ====================== */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* CONTENIDO */
+.card-content {
+    padding: 20px;
+}
+
+/* TITULO */
+.card h3 {
+    margin-bottom: 8px;
+}
+
+/* CATEGORIA */
+.categoria {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 12px;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* TEXTO */
+.card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* PRECIO */
+.card h4 {
+    margin-top: 15px;
+    color: var(--color-primary);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* HOVER EFECTO */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--color-dark);
+    color: white;
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 900px) {
+    .precios-grid {
+        grid-template-columns: 1fr;
+    }
+}
